@@ -1,5 +1,5 @@
 ﻿using ControladorContatos.Models;
-using ControladorContatos.Repositorio;
+using ControladorContatos.Repositorio.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControladorContatos.Controllers

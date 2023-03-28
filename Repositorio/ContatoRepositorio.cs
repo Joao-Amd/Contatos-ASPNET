@@ -1,5 +1,6 @@
 ﻿using ControladorContatos.Data;
 using ControladorContatos.Models;
+using ControladorContatos.Repositorio.Interfaces;
 
 namespace ControladorContatos.Repositorio
 {

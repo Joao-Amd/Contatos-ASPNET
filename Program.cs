@@ -1,5 +1,6 @@
 using ControladorContatos.Data;
 using ControladorContatos.Repositorio;
+using ControladorContatos.Repositorio.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace ControladorContatos
@@ -15,6 +16,7 @@ namespace ControladorContatos
 
             builder.Services.AddDbContext<BancoContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
             builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+            builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             var app = builder.Build();
             
 
